@@ -1,0 +1,59 @@
+/*Herencia*/
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+body{
+    font-family: sans-serif;
+}
+h1,h2 {
+    color: gray;
+}            
+h1 {
+    border-bottom: 1px solid black;
+}
+p.greentea {
+    color: green;
+}
+p.blueberryyeah{
+    color: darkblue;
+}
+p.cranberry{
+    color: darkred;
+}
+p.grapefruit{
+    color: darkorchid;
+}
+p {
+    color: maroon;
+}
+em {
+    font-family: serif;
+}
+#unique {
+    font-size: 20px;
+    color: lightpink;
+}
+
+div p {
+    color: purple;
+}
+
+ul.orange > li {
+    color: orange;
+}
+
+h1 + p {
+    color: teal;
+}
+
+/*Nomas para el input de texto*/
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+a:hover {
+    color: blueviolet;
+}
