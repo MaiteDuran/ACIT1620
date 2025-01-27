@@ -1,0 +1,53 @@
+/*
+.box > *{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(127, 199, 247);
+}
+
+.box {
+    border: 2px dotted rgb(96 139 168);
+    display: flex;
+    flex-direction: column;
+}
+/*
+/*Distribute the items withc space around)*/
+.flex-container {
+    display: flex; /* Activate the flexbox */
+    flex-direction: row; /* Items are place in a row */
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: azure;
+}
+
+/*flex items*/
+.flex-item {
+    flex: 1; /*Each item grows equally*/
+    min-width: 100px; /*Minimum width for responsiveness*/
+    max-width: 200px; /*Maximum width for responsiveness*/
+    text-align: center;
+    border: 1px solid blue;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.box {
+    display: flex;
+}
+
+.one {
+    flex: 1 1 auto;
+}
+
+.two {
+    flex: 1 1 auto;
+}
+
+.three {
+    flex: 1 1 auto;
+}
