@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Document </title>
+    </head>
+    <style>
+        p {
+            animation-duration: 3s;
+            animation-name: slide-in;
+        }
+
+        p span {
+            display: inline-block;
+        }
+
+        @keyframes slide-in {
+            from {
+                translate: 150vw 0;
+                scale: 100% 1;
+            }
+            to {
+                translate: 0 0;
+                scale: 100% 1;
+            }
+        }
+
+        @keyframes grow-shrink {
+            25%,
+            75% {
+                scale: 100%;
+            }
+
+            50% {
+                scale: 200%;
+                color: magenta;
+            }
+        }
+
+    </style>
+    <body>
+        <h1> Animaciones </h1>
+        <p>
+            Eres un tazo de oro corazón.
+            Ice on my <span> teeth </span>.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Transforms </title>
+    </head>
+    <style>
+        div {
+            margin: 150px;
+            width: 300px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 2px solid blue;
+            /*transform: translate(100px, 100px);*/
+            /*transform: scale(2,3); ##2 times original width, 3 times original height
+            /*ScaleX para width, ScaleY para height*/
+            /*transform: skew(30deg, 30deg);*/
+            /*transform: matrix(1, -0.3, 0, 1, 0, 0);*/
+        }
+/*
+        div#rotate_div {
+            transform: rotate(40deg);
+            ##Use -40 pal otro lado
+        }
+*/
+        div#div1 {
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+            /*Matrix es como una convinación de todo esto*/
+        }
+
+        div#div2 {
+            transform: matrix(1, 0, 0.5, 1, 200, 0);
+        }
+
+    </style>
+    <body>
+        <h1> CSS Something Something </h1>
+        <p>
+            Methods
+        </p>
+        <div>
+            Explicación ig.
+        </div>
+        <div id="rotate_div">
+            Ganso que pone huevos de oro
+        </div>
+        <div id="div1">
+            El div 1.
+        </div>
+        <div id="div2">
+            El div 2.
+        </div>
+    </body>
+</html>
