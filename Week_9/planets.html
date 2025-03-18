@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Planets </title>
+        <style>
+            .redtext {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Green Planet </h1>
+        <p id="greenplant"> All is Well </p>
+        <h1> Red Planet </h1>
+        <p id="redplant"> My one desire </p>
+        <h1> Blue Planet </h1>
+        <p id="blueplant"> A happy day in hell </p>
+        <script>
+            function init() {
+                let planet = document.getElementById("greenplant");
+                planet.innerHTML = "Red alert";
+                planet.setAttribute("Class smth");
+            }
+            window.onload = init;
+        </script>
+    </body>
+</html>

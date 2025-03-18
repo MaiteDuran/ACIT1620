@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PreQualification </title>
+        <script>
+            let chevy = {
+                make: "Chevy",
+                model: "Bel Air",
+                year: 1957,
+                color: "red",
+                passenger: 2,
+                convertible: false,
+                mileage: 1021,
+                started: false,
+                start: function() {
+                    this.started = true;
+                },
+                stop: function() {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom");
+                    }
+                    else {
+                        alert("You need to start the engine first");
+                    }
+                }
+            };
+
+            let fiat = {
+                make: "Fiat",
+                model: "500",
+                year: 1957,
+                color: "Medium Blue",
+                passenger: 2,
+                convertible: false,
+                mileage: 88000,
+                started: false,
+                start: function() {
+                    this.started = true;
+                },
+                stop: function() {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom");
+                    }
+                    else {
+                        alert("You need to start the engine first");
+                    }
+                }
+            };
+
+            let cadi = {
+                make: "GM",
+                model: "Cadillac",
+                year: 1955,
+                color: "Tan",
+                passenger: 5,
+                convertible: false,
+                mileage: 12892,
+                started: false,
+                start: function() {
+                    this.started = true;
+                },
+                stop: function() {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom");
+                    }
+                    else {
+                        alert("You need to start the engine first");
+                    }
+                }
+            };
+
+            let taxi = {
+                make: "WebVille Motors",
+                model: "Taxi",
+                year: 1955,
+                color: "Yellow",
+                passenger: 4,
+                convertible: false,
+                mileage: 281341,
+                started: false,
+                start: function() {
+                    this.started = true;
+                },
+                stop: function() {
+                    this.started = false;
+                },
+
+                drive: function() {
+                    if (this.started) {
+                        alert(this.make + " " + this.model + " goes zoom zoom");
+                    }
+                    else {
+                        alert("You need to start the engine first");
+                    }
+                }
+            };
+
+//            fiat.start();
+            fiat.drive();
+            fiat.stop();
+            for (prop in fiat) {
+                console.log(prop + ": " + fiat[prop]);
+            }
+
+            function prequal(car) {
+                if (car.mileage > 10000) {
+                    return false;
+                }
+                else if (car.year > 1960) {
+                    return false;
+                }
+                return true;
+            }
+
+//            let worthALook = prequal(taxi);
+//            if (worthALook) {
+//                console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+//            }
+//            else {
+//                console.log("You should really pass on the " + taxi.make + " " + taxi.model);
+//            }
+
+            function isWorthALook(didQualify, car) {
+                if (didQualify) {
+                console.log("You gotta check out this " + car.make + " " + car.model);
+                }
+                else {
+                    console.log("You should really pass on the " + car.make + " " + car.model);
+                }
+            }
+
+            isWorthALook(prequal(taxi), taxi);
+            isWorthALook(prequal(cadi), cadi);
+            isWorthALook(prequal(chevy), chevy);
+            isWorthALook(prequal(fiat), fiat);
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
