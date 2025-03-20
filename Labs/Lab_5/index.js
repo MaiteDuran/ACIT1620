@@ -1,17 +1,20 @@
 /* Please do not modify any of the provided code snippets*/
 
 const shuffle = (list) => {
-    let currentIndex = list.length - 1; // Start from the last index
+    templist = list
+
+    let currentIndex = templist.length
     let randomIndex
 
     while (currentIndex > 0) {
-        randomIndex = Math.floor(Math.random() * (currentIndex + 1)) // Generate a random index up to currentIndex
-        const temp = list[currentIndex]
-        list[currentIndex] = list[randomIndex]
-        list[randomIndex] = temp 
+        randomIndex = Math.floor(Math.random() * currentIndex)
         currentIndex--
+
+        const temp = templist[currentIndex]
+        templist[currentIndex] = templist[randomIndex]
+        templist[randomIndex] = temp 
     }
-    return list
+    return templist
 }
 /*
     Step 1:
