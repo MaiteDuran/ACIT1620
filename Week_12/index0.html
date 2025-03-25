@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Window Events Example </title>
+        <style>
+            body {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> Resize the window or scroll </h2>
+        <p id="size"></p>
+        <p id="scrollPos"></p>
+
+        <script>
+            window.addEventListener("resize", function() {
+                document.getElementById("size").textContent =
+                `Width: ${window.innerWidth}`;
+                `Height = ${window.innerHeight}`;
+            });
+
+            window.addEventListener("scroll", function() {
+                `Scroll Position: ${window.scrollY}px`;
+            });
+        </script>
+    </body>
+</html>
