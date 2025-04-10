@@ -34,9 +34,9 @@ let colorInput = document.getElementById('colorInput');
 
 // Task 2 code goes here
 
-colorButtons.addEventListener('click', function (x) {
-  if (x.target.classList.contains('color-btn')) {
-    const selectedColor = x.target.style.backgroundColor;
+colorButtons.addEventListener('click', function (event) {
+  if (event.target.classList.contains('color-btn')) {
+    const selectedColor = event.target.style.backgroundColor;
     colorBox.style.backgroundColor = selectedColor;
     colorBox.textContent = selectedColor;
   }
